@@ -11,9 +11,9 @@
   <!----------CSS-->
   <link rel="stylesheet" href="style.css" />
   <title>Manish Singh</title>
-  ...
-<title> Sammy’s First Website </title>
-<link rel="shortcut icon" type="image/png" href="heroimage.png"/>
+  <link rel="shortcut icon" type="image/png" href="heroimage.png"/>
+  
+
 ...
 </head>
 
@@ -401,17 +401,17 @@
   <div class="contact_container container grid">
     <div>
       <div class="contact_information">
-        <i class="uil uil-phone contact_icon"></i>
+          <i class="uil uil-phone contact_icon"></i>
         <div>
           <h3 class="contact_title">Call Me</h3>
-          <span class="contact_subtitle">9311973471</span>
+          <span class="contact_subtitle"> <a href="tel:9311973471" style="color: hsl(275deg 8% 65%);">9311973471</a> </span>
         </div>
       </div>
       <div class="contact_information">
         <i class="uil uil-envelope contact_icon"></i>
         <div>
           <h3 class="contact_title">Email</h3>
-          <span class="contact_subtitle">manishthapliyal2001@gmail.com</span>
+          <span class="contact_subtitle"> <a href="mailto:manishthapliyal2001@gmail.com" style="color: hsl(275deg 8% 65%);">manishthapliyal2001@gmail.com</a> </span>
         </div>
       </div>
       <div class="contact_information">
@@ -422,38 +422,35 @@
         </div>
       </div>
     </div>
-
-  <form action="" class="contact_form grid">
+    
+    <form
+    action="https://formspree.io/f/xbjeykdr"
+    method="POST" class="contact_form grid"
+  >
     <div class="contact_inputs grid">
       <div class="contact_content">
-        <label for="" class="contact_label">Name</label>
+        <label for="" class="contact_label" name="text">Name</label>
         <input type="text" class="contact_input">
       </div>
       <div class="contact_content">
         <label for="" class="contact_label">Email</label>
-        <input type="email" class="contact_input">
+        <input type="email" class="contact_input" name="email">
       </div>
     </div>
     <div class="contact_content">
       <label for="" class="contact_label">Project</label>
-      <input type="text" class="contact_input">
+      <input type="text" class="contact_input" name="text">
     </div>
     <div class="contact_content">
       <label for="" class="contact_label">Message</label>
-      <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+      <textarea name="message" id="" cols="0" rows="7" class="contact_input"></textarea>
     </div>
     <div>
-      <a href="#" class="button button-flex">
-        Send Message
-        <i class="uil uil-message button_icon"></i>
-      </a>
+      <button type="submit" class="button button-flex" style="border: none"> Send Message  <i class="uil uil-message button_icon"></i></button>
     </div>
   </form>
   </div>
 </section>
-
-
-
 </main>
 <!-----------------------FOOTER---------------->
 <footer class="footer">
